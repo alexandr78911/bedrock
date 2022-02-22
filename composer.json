@@ -28,6 +28,10 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/alexandr78911/advanced-custom-fields-pro-5.9.5.git"
     }
   ],
   "require": {
@@ -41,7 +45,9 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
     "wpackagist-plugin/advanced-custom-fields": "5.11.4",
-    "wpackagist-plugin/classic-editor": "1.6.2"
+    "wpackagist-plugin/classic-editor": "1.6.2",
+    "alexandr78911/advanced-custom-fields-pro-5.9.5": "dev-main",
+    "wpackagist-plugin/duplicate-page": "4.4.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.2",

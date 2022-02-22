@@ -4,8 +4,38 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c53e6e8eabce344a67845c01d74f495b",
+    "content-hash": "6d4c2163be243934394138b6ac2bb29f",
     "packages": [
+        {
+            "name": "alexandr78911/advanced-custom-fields-pro-5.9.5",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexandr78911/advanced-custom-fields-pro-5.9.5.git",
+                "reference": "aa2886a466f058bdb6b9347219974417b082c233"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexandr78911/advanced-custom-fields-pro-5.9.5/zipball/aa2886a466f058bdb6b9347219974417b082c233",
+                "reference": "aa2886a466f058bdb6b9347219974417b082c233",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "homepage": "https://github.com/alexandr78911/advanced-custom-fields-pro-5.9.5",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/alexandr78911/advanced-custom-fields-pro-5.9.5/tree/main",
+                "issues": "https://github.com/alexandr78911/advanced-custom-fields-pro-5.9.5/issues"
+            },
+            "time": "2022-02-20T23:39:04+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.0.1",
@@ -1088,6 +1118,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/duplicate-page",
+            "version": "4.4.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-page/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1643609612"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-page/"
         }
     ],
     "packages-dev": [
@@ -1602,6 +1650,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "alexandr78911/advanced-custom-fields-pro-5.9.5": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
