@@ -1,3 +1,6 @@
+@php
+  $all_categories = get_categories();
+@endphp
 <section class="intro_section">
     <div class="intro">
       <h1>{!! the_sub_field('title') !!}</h1>
@@ -5,15 +8,8 @@
         {!! the_sub_field('description') !!}
       </div>
       <ul class="intro_tabs">
-        @php
-          $all_categories = get_categories();
-        @endphp
         @foreach($all_categories as $single_cat)
-          @if($loop->first)
-            <li class="active"><a href="#">{!! $single_cat->name !!}</a></li>
-          @else
-            <li ><a href="#">{!! $single_cat->name !!}</a></li>
-          @endif
+            <li @if($loop->first) class="active" @endif><a href="#">{!! $single_cat->name !!}</a></li>
         @endforeach
       </ul>
     </div>
@@ -21,19 +17,13 @@
 <section class="posts">
   <div class="container-x">
     @foreach($all_categories as $single_cat)
-      @if($loop->first)
-        <div class="tabs__content active">
-      @else
-        <div class="tabs__content">
-      @endif
-        @php
-          $cat_id = $single_cat->cat_ID;
-        @endphp
-        @if ( have_posts() ) 
+        <div class="tabs__content @if($loop->first) active @endif">
+        @if(have_posts()) 
         @php 
+          $cat_id = $single_cat->cat_ID;
           query_posts('cat=' . $cat_id);
         @endphp
-          @while (have_posts())
+          @while(have_posts())
           {!! the_post() !!}
             <div class="post_item">
               <div class="post_item_img">
